@@ -24,7 +24,7 @@ func makeHandler(ctx AppContext, fn func(http.ResponseWriter, *http.Request, App
 // HealthcheckHandler returns useful info about the app
 func HealthcheckHandler(w http.ResponseWriter, req *http.Request, ctx AppContext) {
 	check := Healthcheck{
-		AppName: "go-rest-api-template",
+		AppName: "rest-api",
 		Version: ctx.Version,
 	}
 	ctx.Render.JSON(w, http.StatusOK, check)

@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/codegangsta/negroni"
+	"github.com/urfave/negroni"
 	"github.com/gorilla/mux"
 	"github.com/unrolled/secure"
 )
